@@ -1,14 +1,12 @@
-import os
 import random
 
-import django
-from datacenter.models import (Chastisement, Commendation, Lesson, Mark,
-                               Schoolkid, Subject)
-from django.core.exceptions import MultipleObjectsReturned, ObjectDoesNotExist
-
-django.setup()
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "project.settings")
-
+from datacenter.models import (Chastisement,
+                               Commendation,
+                               Lesson,
+                               Mark,
+                               Schoolkid,
+                               Subject
+                               )
 
 def get_schoolkid(schoolkid_name):
     try:
